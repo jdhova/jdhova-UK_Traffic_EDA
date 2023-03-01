@@ -1,7 +1,7 @@
 
 
 
-# UK TRAFFIC EDA SQL = POWER BI  https://maps.dft.gov.uk/road-casualties/index.html
+## UK TRAFFIC EDA SQL = POWER BI  https://maps.dft.gov.uk/road-casualties/index.html
 
 
 #### -----------------------------------------------------------------------------------------------------------------------------------------------
@@ -225,7 +225,7 @@ SELECT distinct day_of_week as 'Day_Of_The_Week'
   ### --------------------------------------------------------------------------------------------
 
 
-## Weather_Conditions_Condition_Label DIM ---------------------------------------------------------------------------------------------------------------
+## Weather_Conditions_Condition_Label DIM ---------------------------------------------------------------------------------------------------------
 	
 	```
   SELECT distinct [weather_conditions] as 'Weather_Conditions'
@@ -245,7 +245,8 @@ SELECT distinct day_of_week as 'Day_Of_The_Week'
   FROM [UK_Staging].[stg].[accidents]
   ORDER BY 1
 
-
+	
+	```
  ### VIEWS STARTS HERE -------------------------------------------------------------------------------------------------------------
  
  
