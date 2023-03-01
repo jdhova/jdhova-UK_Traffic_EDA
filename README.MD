@@ -346,7 +346,7 @@ SELECT * FROM stg.casualites
 
 ```
 
-## ----------------------------------------------------------------dim. Accidents -----------------------------------------------------------------
+
 SELECT  [accident_index]
       ,[accident_year]
       ,[accident_reference]
@@ -395,7 +395,7 @@ SELECT  [accident_index]
 
 ```
 
----------------------------------------------------------------------------------------------------------------------------------------------------
+
 ## --------------------------------------------------Calendar--------------------------------------------------------------------------------------------------
 
 ```
@@ -490,7 +490,7 @@ on rtp.[calc_road_type] = fa.[calc_road_type]
 
 
 
-
+```
 
 CREATE OR ALTER VIEW rpt.Traffic_UK
 AS
@@ -531,3 +531,5 @@ inner join [dim].[Casualty_Class] class
 on fc.casualty_class = class.[casualty_class]
 inner join [dim].[Road_Type] rtp
 on rtp.[calc_road_type] = fa.[calc_road_type]
+
+```
