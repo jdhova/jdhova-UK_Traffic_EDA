@@ -228,22 +228,6 @@ SELECT distinct day_of_week as 'Day_Of_The_Week'
 ## Weather_Conditions_Condition_Label DIM ---------------------------------------------------------------------------------------------------------
 	
 	```
-  SELECT distinct [weather_conditions] as 'Weather_Conditions'
-	,(CASE
-		when weather_conditions = 1 then 'Fine and no High Winds'
-		when weather_conditions = 2 then 'Raining no High Winds'
-		when weather_conditions = 3 then 'Snowing no High Winds'
-		when weather_conditions = 4 then 'Fine and no High Winds'
-		when weather_conditions = 5 then 'Raining plus High Winds'
-		when weather_conditions = 6 then 'Snowing plus High Winds'
-		when weather_conditions = 7 then 'Fog and Mist'
-		when weather_conditions = 8 then 'Other'
-		when weather_conditions = 9 then 'Unknown'
-		when weather_conditions = -1 then 'Data Missing or not in range'
-		END) AS 'Weather_Conditions_Label'
-   INTO dim.Weather_Conditions
-  FROM [UK_Staging].[stg].[accidents]
-  ORDER BY 1
 
 	
 	```
